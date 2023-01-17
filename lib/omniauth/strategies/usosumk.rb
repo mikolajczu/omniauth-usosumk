@@ -5,7 +5,7 @@ module OmniAuth
   module Strategies
     class Usosumk < OmniAuth::Strategies::OAuth
       option :name, 'usosumk'
-      option :callback_url, "http://127.0.0.1:3000/oauth/callback"
+      option :callback_url, "/oauth/callback"
 
       option :client_options, {site: "https://usosapps.umk.pl",
                                request_token_url: "/services/oauth/request_token?scopes=email",
